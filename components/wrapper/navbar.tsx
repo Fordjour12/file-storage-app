@@ -1,6 +1,8 @@
+import { Button } from "../ui/button";
+
 export default function NavBar() {
   return (
-    <div>
+    <>
       <header className="fixed left-0 top-0 z-50 w-full translate-y-[-1rem] animate-fade-in border-b opacity-0 backdrop-blur-[12px] [--animation-delay:600ms]">
         <div className="container flex h-[3.5rem] items-center justify-between">
           <a className="text-md flex items-center" href="/">
@@ -22,9 +24,21 @@ export default function NavBar() {
           </button>
         </div>
       </header>
-    </div>
+
+      <nav className="fixed left-0 top-0 z-50 h-[4rem] w-full overflow-auto bg-background/70 backdrop-blur-[12px] pointer-events-none">
+        <div className="container flex h-[3.5rem] items-center justify-between">
+          <a className="text-md flex items-center" href="/">
+            Magic UI
+          </a>
+          <Button className="ml-6 md:hidden">
+            <span className="sr-only">Toggle menu</span>
+          </Button>
+        </div>
+      </nav>
+    </>
   );
 }
+
 {
   /*<nav className="fixed left-0 top-0 z-50 h-screen w-full overflow-auto bg-background/70 backdrop-blur-[12px] pointer-events-none">
         <div className="container flex h-[3.5rem] items-center justify-between">
