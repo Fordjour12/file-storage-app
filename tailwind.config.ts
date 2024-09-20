@@ -18,6 +18,24 @@ const config = {
 			},
 		},
 		extend: {
+			fontSize: {
+				sm: "clamp(0.8rem, 0.16vi + 0.76rem, 0.89rem)",
+				base: "clamp(1rem, 0.33vi + 0.93rem, 1.19rem)",
+				lg: "clamp(1.25rem, 0.58vi + 1.12rem, 1.58rem)",
+				xl: "clamp(1.56rem, 0.95vi + 1.35rem, 2.11rem)",
+				"2xl": "clamp(1.95rem, 1.49vi + 1.62rem, 2.81rem)",
+				"3xl": "clamp(2.44rem, 2.27vi + 1.93rem, 3.75rem)",
+				"4xl": "clamp(3.05rem, 3.38vi + 2.29rem, 5rem)",
+				"5xl": "clamp(3.81rem, 4.95vi + 2.7rem, 6.66rem)",
+				"6xl": "clamp(4.77rem, 7.15vi + 3.16rem, 8.88rem)",
+				"7xl": "clamp(5.96rem, 10.22vi + 3.66rem, 11.84rem)",
+				"8xl": "clamp(7.45rem, 14.49vi + 4.19rem, 15.78rem)",
+				"9xl": "clamp(9.31rem, 20.39vi + 4.73rem, 21.03rem)",
+				"10xl": "clamp(11.64rem, 28.52vi + 5.23rem, 28.04rem)",
+				"11xl": "clamp(14.55rem, 39.69vi + 5.62rem, 37.38rem)",
+				"12xl": "clamp(18.19rem, 55.01vi + 5.81rem, 49.82rem)",
+				"13xl": "clamp(22.74rem, 75.96vi + 5.65rem, 66.41rem)",
+			},
 			colors: {
 				border: "hsl(var(--border))",
 				input: "hsl(var(--input))",
@@ -91,12 +109,9 @@ const config = {
 						"background-position": "calc(100% + var(--shimmer-width)) 0",
 					},
 				},
-				ripple: {
-					"0%, 100%": {
-						transform: "translate(-50%, -50%) scale(1)",
-					},
-					"50%": {
-						transform: "translate(-50%, -50%) scale(0.9)",
+				"border-beam": {
+					"100%": {
+						"offset-distance": "100%",
 					},
 				},
 			},
@@ -106,7 +121,7 @@ const config = {
 				marquee: "marquee var(--duration) linear infinite",
 				"marquee-vertical": "marquee-vertical var(--duration) linear infinite",
 				shimmer: "shimmer 8s infinite",
-				ripple: "ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite",
+				"border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
 			},
 		},
 	},
