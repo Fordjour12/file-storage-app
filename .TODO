@@ -1,0 +1,74 @@
+### To-Do List for the File Storage Web App
+
+#### **1. Project Setup:**
+   - [x] Initialize a **Next.js** project.
+   - [ ] Set up **TailwindCSS** for styling.
+   - [ ] Set up **Google Cloud Storage** integration for file uploads and management.
+   - [ ] Set up **PostgreSQL** database with **Drizzle ORM** for file metadata and user management.
+   - [ ] Create a GitHub repository and establish version control.
+
+#### **2. Authentication & Authorization:**
+   - [ ] Implement **JWT-based authentication** for secure access.
+   - [ ] Set up user registration and login functionality.
+   - [ ] Define **user roles** (Admin, User) and restrict access to specific functionalities based on roles.
+   - [ ] Add **social media logins** (optional).
+
+#### **3. File Management Features:**
+   - [ ] Design the **UI/UX for file management** (upload, download, delete).
+   - [ ] Enable **regular file saving** and **archive state** toggling.
+   - [ ] Implement file upload to **Google Cloud Storage**.
+   - [ ] Add **progress bars** and feedback for file uploads/downloads.
+   - [ ] Allow users to tag and categorize files for better organization.
+   - [ ] Create search functionality to filter files by name, tag, or size.
+
+#### **4. Database & Metadata Management:**
+   - [ ] Define the database schema in **Drizzle ORM** for file metadata (name, size, type, tags, archive state, etc.).
+   - [ ] Implement **queries** to handle archived files separately from regular files.
+   - [ ] Set up a **file history system** to track uploads, modifications, and deletions.
+
+#### **5. UI/UX Design:**
+   - [ ] Design a clean, responsive **UI** for the web app using **TailwindCSS**.
+   - [ ] Implement the **light and dark modes** using the **Burnt Orange** theme.
+   - [ ] Create a **dashboard** for users to view file storage stats (total files, used space, etc.).
+   - [ ] Design the **archive section** with clear navigation between regular and archived files.
+   - [ ] Ensure mobile responsiveness for the app.
+
+#### **6. Landing Page:**
+   - [ ] Create a **landing page** to introduce the app, highlighting key features.
+   - [ ] Write compelling **copy** for the landing page that includes CTAs (Call to Actions) like “Sign Up” or “Get Started.”
+   - [ ] Add sections for **testimonials** or user reviews, and feature a **pricing plan** if applicable.
+   - [ ] Ensure SEO optimization for better visibility.
+
+#### **7. File Storage & Cloud Integration:**
+   - [ ] Ensure **Google Cloud Storage** is correctly integrated to handle file storage.
+   - [ ] Set up a **file expiration policy** (optional) for archived files that are not accessed after a certain period.
+   - [ ] Implement **security policies** to ensure that file uploads and downloads are secure (e.g., access tokens, file encryption).
+
+#### **8. File Organization & Search:**
+   - [ ] Implement **file tagging** and create a UI for users to manage file tags.
+   - [ ] Add **search and filtering functionality** to allow users to find files by name, tag, type, or size.
+   - [ ] Create a **sort** feature (by date, size, etc.) for files in the UI.
+
+#### **9. Notifications & Feedback:**
+   - [ ] Add **email notifications** for important actions, such as completed uploads or archived file expiration.
+   - [ ] Implement real-time feedback for file uploads/downloads (progress bars, success/error messages).
+
+#### **10. Testing & Optimization:**
+   - [ ] Conduct **unit testing** for all major components (authentication, file upload, archive system).
+   - [ ] Optimize for **performance**, especially during file uploads, large file handling, and cloud storage operations.
+   - [ ] Ensure **accessibility** (a11y) standards for UI components.
+   - [ ] Test across different devices and screen sizes for responsiveness.
+
+#### **11. Deployment:**
+   - [ ] Deploy the web app on **Vercel** (or another platform) with proper environment configurations for **Google Cloud Storage** and **PostgreSQL**.
+   - [ ] Set up **CI/CD pipelines** for automatic deployments from GitHub.
+
+#### **12. Marketing & User Engagement:**
+   - [ ] Develop a **marketing strategy** (SEO, email campaigns, social media).
+   - [ ] Implement **analytics** (Google Analytics or similar) to track user behavior and engagement.
+   - [ ] Set up a **contact/support system** for users to reach out with issues or suggestions.
+   - [ ] Develop a **pricing plan** and integrate it (optional, if offering premium services).
+
+---
+
+By following this to-do list, you can stay organized and ensure that the MVP for the file storage app is completed within the desired timeframe.

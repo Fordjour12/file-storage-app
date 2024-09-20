@@ -1,0 +1,11 @@
+{
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "files.associations": {
+        "*.css":"tailwindcss",
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.biome": "always",
+        "source.organizeImports": "always",
+        "source.removeUnusedImports": "always"
+    },
+}
