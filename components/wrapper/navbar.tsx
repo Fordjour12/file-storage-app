@@ -1,41 +1,34 @@
-import { Button } from "../ui/button";
+import { Fragment } from "react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import ModeToggle from "@/components/mode-toggle";
 
 export default function NavBar() {
   return (
-    <>
-      <header className="fixed left-0 top-0 z-50 w-full translate-y-[-1rem] animate-fade-in border-b opacity-0 backdrop-blur-[12px] [--animation-delay:600ms]">
+    <Fragment>
+      <header className="fixed flex items-center left-0 top-0 z-50 h-[4rem] w-full overflow-auto bg-background/70 backdrop-blur-[12px]">
         <div className="container flex h-[3.5rem] items-center justify-between">
           <a className="text-md flex items-center" href="/">
             Magic UI
           </a>
-          <div className="ml-auto flex h-full items-center">
+          <div className="ml-auto h-full items-center hidden md:flex">
             <a className="mr-6 text-sm" href="/signin">
               Log in
             </a>
-            <a
-              className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80 h-9 px-4 py-2 mr-6 text-sm"
-              href="/signup"
-            >
-              Sign up
-            </a>
-          </div>
-          <button type="button" className="ml-6 md:hidden">
-            <span className="sr-only">Toggle menu</span>
-          </button>
-        </div>
-      </header>
 
-      <nav className="fixed left-0 top-0 z-50 h-[4rem] w-full overflow-auto bg-background/70 backdrop-blur-[12px] pointer-events-none">
-        <div className="container flex h-[3.5rem] items-center justify-between">
-          <a className="text-md flex items-center" href="/">
-            Magic UI
-          </a>
+            <Button asChild className="line-flex items-center">
+              <Link href="/signup">Get Started</Link>
+              {/* Get Started */}
+            </Button>
+          </div>
           <Button className="ml-6 md:hidden">
             <span className="sr-only">Toggle menu</span>
+            Toggle Menu
           </Button>
         </div>
-      </nav>
-    </>
+        <ModeToggle />
+      </header>
+    </Fragment>
   );
 }
 
